@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% block main %}
+<div class="info">
+    <img src="{{url_for('static',filename='@drooling_demon.jpg')}}" width="1000" length="1000"/>
+    <br>
+    <h1>Jillian Budd</h1>
+    <h3>@jbudd</h3>
+    <h3>St. Catherine, Jamaica</h3>
+    <h3>Joined {{join_date}}</h3>
+</div>
+<div class="bio">
+    <p>A young woman who likes art and game design. Currently working on a new project, check posts for updates.</p>
+</div>
+<div class="stats">
+    <div class="stat">
+        <span class="number">28</span>
+        <span class="label">Posts</span>
+    </div>
+    <div class="stat">
+        <span class="number">200</span>
+        <span class="label">Following</span>
+    </div>
+    <div class="stat">
+        <span class="number">1000</span>
+        <span class="label">Followers</span>
+    </div>
+    <button id="follow" class="btn">Follow</button>
+</div>
+{% endblock %}
